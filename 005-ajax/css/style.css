@@ -1,0 +1,95 @@
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translate3d(0, 10px, 0); }
+  100% { opacity: 1;transform: translate3d(0, 0, 0); }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 16px/1.5 Work Sans, Arial;
+  background: url(../images/newyork.jpg) center center;
+  background-size: cover;
+  margin: 0 auto 0 auto;
+  max-width: 600px;
+}
+
+article {
+  background: white;
+  color: #333333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin: -200px 0 0 -200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1s 1s 1 both;
+}
+
+article div.title {
+  background: #fae04b;
+  padding: 30px;
+}
+
+article div.content {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0 30px 0 0;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+form {
+  overflow: hidden;
+}
+
+label {
+  display: block;
+  margin: 0 0 10px;
+}
+
+input {
+  border: 2px solid #ccc;
+  padding: 10px 15px;
+  outline: none;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type=email] {
+  margin-bottom: 10px;
+}
+
+input[type=submit] {
+  background: #999;
+  border-color: #999;
+  color: white;
+  cursor: pointer;
+}
+
+div.success {
+  color: green;
+}

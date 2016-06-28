@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 16px/1.5 EB Garamond, Times;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+  padding: 10px 20px;
+  z-index: 1;
+  transition: top 1s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+header.show {
+  top: 3px;
+}
+
+header h1 {
+  font-size: 16px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+header nav {
+  float: left;
+}
+
+header a {
+  color: #ff4141;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+}
+
+div.hero {
+  background-image: url(../images/mountain.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0 0;
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 600px;
+}
+
+article {
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 3px;
+  background: #ccc;
+  z-index: 2;
+}
+
+.progress {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 0;
+  min-height: 3px;
+  background: #ff4141;
+}
